@@ -1,0 +1,7 @@
+bees
+ant
+wasp
+dragonfly-blue-green
+dragonfly-red
+dragonfly-green
+fireflies

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+for command in ls uname hostname pwd; do
+	$command
+done

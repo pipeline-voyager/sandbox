@@ -1,0 +1,30 @@
+  128  alias rm='rm -i'
+  129  alias rm
+  131  type rm
+  136  rm sample.txt
+  139  rm sample.txt
+  180  rm sample.txt
+  221  rm dragonfly fireflies
+  253  sudo docker rm 96a9 
+  260  sudo docker rm hello-world:lates
+  261  sudo docker rm hello-world:latest
+  262  sudo docker rm hello-world
+  267  sudo docker rm 6eb 
+  276  sudo docker rm 310
+  282  sudo docker stop f944 && sudo docker rm f944
+  291  sudo docker rm 017 
+  296  sudo docker rm 3d
+  381  sudo docker rm 52
+  391  sudo docker rm 1faf
+  404  unalias rm
+  405  type rm
+  407  alias rm='rm -i'
+  408  type rm
+  412  unalias rm
+  413  alias rm
+  414  type rm
+  489  rm help.txt
+  495  rm echo.txt
+  499  rm help.txt
+  519  history | grep rm | less
+  521  history | grep rm > rm_history.txt
