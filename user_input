@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+#this prompt the user to enter his/her fullname
+read -p "Enter your full name: " name
+echo "Hello, $name" #then print the the greeting following the fullname
