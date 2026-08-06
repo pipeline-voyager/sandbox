@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "this can accept [one argument]      --> $1"
+echo "this can accept [two argument]      --> $1 $2"
+echo "this can accept [three argument]    --> $1 $2 $3"
+echo "this can accept [multiple argument] --> $@"

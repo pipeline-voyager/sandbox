@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+#EQUAL
+a=2
+b=2
+
+if [[ $a == $b ]]; then
+    echo 'a and b are equal.'
+fi
+#--------------------------------
+#NOT EQUAL
+c=3
+d=4
+
+if [[ $c != $d ]]; then
+    echo 'c and d are not equal.'
+fi

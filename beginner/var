@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+name="carllazaro"
+var=$name
+echo $var

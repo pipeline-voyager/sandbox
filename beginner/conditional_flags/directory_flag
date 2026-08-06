@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+directory="$1"
+#this checks if directory exists (directory only)
+if [[ -d $directory ]]; then
+    echo "$directory exists."
+else
+    echo "$directory does not exist."
+fi

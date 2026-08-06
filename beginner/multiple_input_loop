@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+name="$@" #this receives multiple input [$@]
+for name in "$@"; do
+    #for all name in input
+    echo "Hello, $name"
+done

@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+greet() {
+    name="$@"
+    echo "Hello, $name"
+}
+for name in "$@"; do
+    greet "$name"    
+done
+
+: << 'COMMENT'
+    the program will execute from top to bottom it will 
+    peak into function 'greet' first. since function 
+    'greet' isn't called yet, the program will skip it, 
+    but will remember it.
+    +----------------------------------------------------+
+            then for loop will be executed first
+    +----------------------------------------------------+
+    this means it'll take one or more arguments
+                  |
+       container  |
+         |        |
+    for name in "$@"; do
+        greet "$name" ------- then argument will be passed
+          |
+    function greet will be called this time
+  
+    +----------------------------------------------------+
+                breakdown for function 'greet'
+    +----------------------------------------------------+
+    greet() {
+        name="$@" ------ this will accept the argument from the loop --> greet "$name"
+        echo "Hello, $name"
+               |
+               |
+    then finally printing the greeting
+    }
+COMMENT
