@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+function1() {
+    echo "function1: Hello, function2 and function3."
+}
+function2() { 
+    echo "function2: Hello, function1 and function3."
+}
+function3() {
+    echo "function3: Hello, function1 and function2."
+}
+function1
+function2
+function3
