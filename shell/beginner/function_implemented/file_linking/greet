@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+greet() {
+    name="$@"
+    echo "Hello, $name"
+}
+greet "$@"

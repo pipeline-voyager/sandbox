@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+#this prints a string
+name="Carl"
+echo $name
+
+#------------------------------------------------------------------------
+
+#this prints an integer
+age=24
+count=1
+echo "You are $age years old" 
+echo "$((age + count))" #this adds two numbers format: $((int a + int b))
+
+#------------------------------------------------------------------------
+
+#regular array
+fruits=("orange" "banana" "apple")
+echo "Fruit #1: ${fruits[0]}"
+echo "Fruit #2: ${fruits[1]}"
+echo "Fruit #3: ${fruits[2]}"
+
+#------------------------------------------------------------------------
+
+#associative array using string index -A
+declare -A person
+person[name]="Carl"
+person[age]=24
+person[city]="Antipolo"
+echo "${person[name]}"
+
+#associative array using int index -a
+declare -a loc
+loc[0]="Antipolo"
+loc[1]="Binangonan"
+loc[2]="Angono"
+loc[3]="Cainta"
+loc[4]="Morong"
+echo "${loc[0]}"
+
+#------------------------------------------------------------------------
+
+#boolean, sort of
+true #this returns 0 - theres no error
+echo $? #0 - output
+false #this returns 1 - theres an error
+echo $? #1 - output
+
+#------------------------------------------------------------------------
+
+#null
+username=
+echo $username #will output a whitespace
