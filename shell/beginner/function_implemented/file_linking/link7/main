@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+for temp in "$@"; do
+    ./temperature $temp
+done

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+temp=$1
+
+if [[ $temp -eq 35 || $temp -gt 35 ]]; then
+    echo "$temp°C - Very Hot"
+elif [[ $temp -eq 30 || $temp -gt 30 ]]; then
+    echo "$temp°C - Hot"
+elif [[ $temp -eq 20 || $temp -gt 20 ]]; then
+    echo "$temp°C - Normal"
+elif [[ $temp -lt 20 ]]; then
+    echo "$temp°C - Cold"
+else
+    echo "Invalid"
+fi
+
