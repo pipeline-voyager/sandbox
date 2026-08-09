@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+for score in "$@"; do
+    ./grade $score
+done

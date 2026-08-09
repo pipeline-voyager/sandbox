@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+check_grade() {
+    grade=$1
+
+    if [[ $grade -eq 90 || $grade -gt 90 ]]; then
+        #90-100
+        echo "$grade - Excellent"
+    elif [[ $grade -eq 80 || $grade -gt 80 ]]; then
+        #80-89
+        echo "$grade - Very Good"
+    elif [[ $grade -eq 75 || $grade -gt 75 ]]; then
+        #75-79
+        echo "$grade - Passed"
+    elif [[ $grade -lt 75 ]]; then
+        #74
+        echo "$grade - Failed"
+    else
+        echo "Invalid"
+    fi
+}
+check_grade $@
