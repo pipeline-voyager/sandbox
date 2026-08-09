@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+greet() {
+    fname=$1
+    lname=$2
+    echo "Hello, $fname $lname"
+}
+greet "$@"
