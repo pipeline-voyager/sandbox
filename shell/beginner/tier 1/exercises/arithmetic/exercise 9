@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+read -p "countdown: " num
+index=1
+while [ $index -le $num ]
+do 
+	echo $num
+	((num--))
+	sleep 1
+done
+echo "kaboom!!!"
+yes
