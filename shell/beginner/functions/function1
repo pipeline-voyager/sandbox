@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+addition() {
+    z=$((x+y))
+    echo "$x + $y = $z"
+}
+subtraction() {
+    z=$((x-y))
+    echo "$x - $y = $z"
+}
+multiplication() {
+    z=$((x*y))
+    echo "$x * $y = $z"
+}
+division() {
+    z=$((x/y))
+    echo "$x / $y = $z"
+}
+modulo() {
+    z=$((x%y))
+    echo "$x % $y = $z"
+}
+main() {
+    read -p "Enter first number: " x
+    read -p "Enter second number: " y
+    read -p "Enter operation: " operation
+    if [[ "$operation" == "+" ]]; then
+        addition "$x" "$y"
+    elif [[ "$operation" == "-" ]]; then
+        subtraction "$x" "$y"
+    elif [[ $operation == "*" ]]; then
+        multiplication "$x" "$y"
+    elif [[ $operation == "/" ]]; then
+        division "$x" "$y"
+    elif [[ $operation == "%" ]]; then
+        modulo "$x" "$y"
+    else 
+        echo "Invalid"
+    fi
+}
+main
