@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+#Exercise 5 - Countdown
+
+count=10
+
+while [[ "$count" -ne 0 ]]; do
+    echo "$count"
+    ((count--))
+    sleep 1
+done
+echo "Blast off!"

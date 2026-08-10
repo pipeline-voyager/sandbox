@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+name="Carl        Lazaro"
+echo "$name" #using " " (double quotation mark) will print the literal string value including the whitespace
+echo '$name' #using ' ' (single quotation) will just print the variable name
+echo $name #no quotation will remove any long whitespaces
+
+age=24
+echo $age

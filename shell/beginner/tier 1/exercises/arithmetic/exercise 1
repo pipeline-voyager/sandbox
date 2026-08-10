@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+#Exercise 1 - Basic operations
+
+#Sum
+let summ=a+b
+echo "Sum: $summ"
+
+#Difference
+let diff=a-b
+echo "Difference: $diff"
+
+#Product
+let prod=a*b
+echo "Product: $prod"
+
+#Quotient
+let quo=a/b
+echo "Quotient: $quo"
+
+#Remainder
+let rem=a%b
+echo "Remainder: $rem"

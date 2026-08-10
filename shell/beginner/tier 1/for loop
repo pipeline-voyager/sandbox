@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+#for loop 1
+for i in {1..5}; do 
+    echo "$i"
+done
+
+# {from..until}
+
+#for loop 2
+name1="Carl"
+name2="Lazaro"
+name3="Rose"
+name4="Tinel"
+
+for item in $name1 $name2 $name3 $name4; do
+    echo "$item"
+done

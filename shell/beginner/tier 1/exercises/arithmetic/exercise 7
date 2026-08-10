@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+read -p "Enter a number from 1-10: " input
+index=1
+
+while ((index <= 10)); do
+    mul=$((input*index))
+    echo "$input x $index = $mul"
+    ((index++))    
+done

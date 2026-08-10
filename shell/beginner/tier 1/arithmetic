@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+#addition
+a=1
+b=2
+c=$(($a + $b))
+echo $c
+
+#subtraction
+c=$(($a - $b))
+echo $c
+
+#multiplication
+c=$(($a * $b))
+echo $c
+
+#division
+c=$((4 / 2))
+echo $c
+
+#modulus
+c=$((3 % 2))
+echo $c
+
+#exponentiation
+c=$((3 ** 2))
+echo $c
+
+
+#--------------------- let ---------------------
+let c=1+2
+echo $c
+
+#incrementation
+d=1
+((d++))
+echo $d
+
+((d+=2))
+echo $d
+
+#decrementation
+((d--))
+echo $d
+
+((d-=2))
+echo $d
+
+x=2
+y=4
+let z=x+y
+echo $z

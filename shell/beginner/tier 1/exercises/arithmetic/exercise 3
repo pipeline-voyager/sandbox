@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+#Exercise 3 - Rectangle calculator
+
+length=15
+width=8
+
+#area calculation
+let area=length*width
+let perimeter=2*$((length + width))
+echo "Area: $area"
+echo "Perimeter: $perimeter"

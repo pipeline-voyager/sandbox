@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+#Exercise 2 - Increment and Decrement
+
+x=10
+((x++))
+((x++))
+((x--))
+((x+=5))
+((x-=3))
+echo "$x"

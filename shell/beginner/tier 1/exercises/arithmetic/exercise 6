@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+num=1
+sum=0
+
+while ((num <= 10)); do
+    ((sum+=num))
+    ((num++))
+done
+echo "$sum"

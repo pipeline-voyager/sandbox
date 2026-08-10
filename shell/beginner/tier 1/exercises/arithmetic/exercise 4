@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+#Exercise 4 - Student average
+
+math=85
+science=90
+english=80
+
+let total=$((math + science + english))
+let average=total/3
+echo "Total: $total"
+echo "Average: $average"
